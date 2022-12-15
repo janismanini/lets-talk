@@ -1,10 +1,9 @@
 <template>
-  <h1>All Interviews</h1>
   <section class="interviews">
     <router-link
       v-for="interview in this.interviews"
       :key="interview.id"
-      :to="interview.slug"
+      :to="`interview/${interview.slug}`"
     >
       <h2>{{ interview.name }}</h2>
       <img
