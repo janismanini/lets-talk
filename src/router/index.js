@@ -13,6 +13,7 @@ const router = createRouter({
     },
     {
       path: "/interview/:slug",
+      name: "interview.page",
       component: () => import("../views/InterviewPage.vue"),
     },
   ],

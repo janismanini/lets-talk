@@ -3,7 +3,7 @@
     <router-link
       v-for="interview in this.interviews"
       :key="interview.id"
-      :to="`interview/${interview.slug}`"
+      :to="{ name: 'interview.page', params: { slug: interview.slug } }"
     >
       <h2>{{ interview.name }}</h2>
       <img
