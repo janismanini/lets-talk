@@ -29,7 +29,6 @@ export default {
 
 <style>
 nav .router-link-active {
-  font-weight: 900;
-  border-bottom: 1px solid;
+  border-bottom: 2px solid;
 }
 </style>
