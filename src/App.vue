@@ -1,10 +1,10 @@
 <template>
   <main-nav />
-  <div class="logo">
+  <aside class="logo">
     <router-link to="/">
       <img src="../src/assets/lttgl_logo.png" alt="Lets Talk The Good Life" />
     </router-link>
-  </div>
+  </aside>
   <main>
     <div class="container">
       <router-view></router-view>

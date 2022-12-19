@@ -1,17 +1,15 @@
 <template>
   <router-link
-    v-for="interview in interviews"
-    :key="interview.id"
     :to="{ name: 'interview.page', params: { slug: interview.slug } }"
   >
-    <slot :interview="interview"></slot>
+    <slot></slot>
   </router-link>
 </template>
 
 <script>
 export default {
   props: {
-    interviews: {
+    interview: {
       type: Object,
       required: true,
     },

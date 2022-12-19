@@ -1,22 +1,26 @@
 <template>
   <section class="interviews">
-    <interview-links :interviews="interviews" v-slot="{ interview }">
-      <h2>{{ interview.name }}</h2>
-      <img
-        :src="`../src/assets/images/${interview.portrait}`"
-        :alt="`interview with ${interview.name}`"
-      />
-    </interview-links>
+    <ul class="interviews__list">
+      <li v-for="interview in interviews" :key="interview.id">
+        <interview-link :interview="interview">
+          <h2>{{ interview.name }}</h2>
+          <img
+            :src="`../src/assets/images/${interview.portrait}`"
+            :alt="`interview with ${interview.name}`"
+          />
+        </interview-link>
+      </li>
+    </ul>
   </section>
 </template>
 
 <script>
 import sourceData from "../data.json";
-import InterviewLinks from "../components/InterviewLinks.vue";
+import InterviewLink from "../components/InterviewLink.vue";
 
 export default {
   components: {
-    InterviewLinks,
+    InterviewLink,
   },
   data() {
     return {
