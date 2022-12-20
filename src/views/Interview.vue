@@ -33,12 +33,16 @@
 import sourceData from "../data.json";
 
 export default {
-  computed: {
-    interviewSlug() {
-      return this.$route.params.slug;
+  props: {
+    slug: {
+      type: String,
+      required: true,
     },
+  },
+
+  computed: {
     interview() {
-      return sourceData.interviews.find((i) => i.slug === this.interviewSlug);
+      return sourceData.interviews.find((i) => i.slug === this.slug);
     },
   },
 };
