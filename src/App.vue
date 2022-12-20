@@ -7,7 +7,11 @@
   </aside>
   <main>
     <div class="container">
-      <router-view :key="$route.path"></router-view>
+      <router-view v-slot="{ Component }">
+        <transition name="fade" mode="out-in">
+          <component :is="Component" :key="$route.path"></component>
+        </transition>
+      </router-view>
     </div>
   </main>
 </template>
@@ -21,3 +25,15 @@ export default {
   },
 };
 </script>
+
+<style>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.1s ease-out;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>
