@@ -12,7 +12,7 @@ const router = createRouter({
       component: () => import("../views/About.vue"),
     },
     {
-      path: "/interview/:slug",
+      path: "/:slug",
       name: "interview.page",
       component: () => import("../views/Interview.vue"),
       props: (route) => ({ slug: route.params.slug }),
