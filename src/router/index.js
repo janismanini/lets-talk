@@ -40,6 +40,15 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    return (
+      savedPosition ||
+      // delay scoll to top for time of set transition mode out-in in App.vue
+      new Promise((resolve) => {
+        setTimeout(() => resolve({ top: 0 }), 100);
+      })
+    );
+  },
 });
 
 export default router;
