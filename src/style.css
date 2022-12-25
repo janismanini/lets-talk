@@ -18,6 +18,12 @@ body {
   min-height: 100vh;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 a {
   font-weight: 600;
   color: #646cff;
@@ -27,15 +33,19 @@ a:hover {
   color: #53f26e;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 #app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+.logo {
+  position: absolute;
+  top: 7rem;
+  right: 6rem;
+}
+
+.logo img {
+  width: 22rem;
 }
