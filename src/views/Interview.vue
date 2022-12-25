@@ -8,16 +8,13 @@
     />
     <h3>{{ interview.intro }}</h3>
     <ul>
-      <li
-        v-for="question in interview.questions"
-        :key="interview.questions.indexOf(question)"
-      >
+      <li v-for="(question, index) in interview.questions" :key="index">
         <h4>{{ question.title }}</h4>
         <p>{{ question.answer }}</p>
         <div class="interview__images" v-if="question.images.length">
           <img
-            v-for="image in question.images"
-            :key="question.images.indexOf(image)"
+            v-for="(image, index) in question.images"
+            :key="index"
             :src="`../src/assets/images/${image}`"
             :alt="`interview with ${interview.name}`"
           />
