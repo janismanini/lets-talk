@@ -5,7 +5,7 @@
       <img src="../src/assets/lttgl_logo.png" alt="Lets Talk The Good Life" />
     </router-link>
   </aside>
-  <main>
+  <main class="main">
     <div class="container">
       <router-view v-slot="{ Component }">
         <transition name="fade" mode="out-in">

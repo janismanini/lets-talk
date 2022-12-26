@@ -1,9 +1,12 @@
 <template>
-  <nav class="navigation">
-    <ul class="navigation__list">
-      <li class="has-submenu">
-        <router-link to="/" aria-expanded="false">interviews</router-link>
-        <ul class="navigation__list-interviews">
+  <nav class="nav" aria-label="main navigation">
+    <ul>
+      <li>
+        <router-link to="/about">about</router-link>
+      </li>
+      <li>
+        <router-link to="/">interviews</router-link>
+        <ul>
           <li v-for="interview in interviews" :key="interview.id">
             <interview-link :interview="interview">
               {{ interview.name }}
@@ -11,7 +14,6 @@
           </li>
         </ul>
       </li>
-      <li><router-link to="/about">about</router-link></li>
     </ul>
   </nav>
 </template>
@@ -33,23 +35,26 @@ export default {
 </script>
 
 <style>
-.navigation {
+.nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 40%;
+  width: calc(35% - 3rem);
+  margin: 1.2rem 1.5rem;
 }
 
-.navigation__list {
-  display: flex;
-  justify-content: space-around;
+.nav a {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 2.4rem;
+  padding: 0 5px;
 }
 
-.navigation__list-interviews {
-  display: none;
+.nav a:hover {
+  background-color: #beef33;
 }
 
-nav .router-link-active {
-  border-bottom: 2px solid;
+.nav li {
+  margin: 0.8rem 0;
 }
 </style>
