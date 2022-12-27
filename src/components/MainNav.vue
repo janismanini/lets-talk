@@ -39,7 +39,7 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-  width: calc(35% - 3rem);
+  width: calc(33% - 3rem);
   margin: 1.2rem 1.5rem;
 }
 

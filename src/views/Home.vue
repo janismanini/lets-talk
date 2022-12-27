@@ -1,7 +1,11 @@
 <template>
   <section class="interviews">
     <ul class="interviews__list">
-      <li v-for="interview in interviews" :key="interview.id">
+      <li
+        v-for="interview in interviews"
+        :key="interview.id"
+        class="interviews__item"
+      >
         <interview-link :interview="interview">
           <h2>{{ interview.name }}</h2>
           <img
@@ -29,3 +33,43 @@ export default {
   },
 };
 </script>
+
+<style>
+.interviews {
+  width: 75%;
+}
+.interviews__item {
+  position: relative;
+  max-height: 560px;
+}
+
+.interviews__item a {
+  display: block;
+}
+
+.interviews__item a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.interviews__item a:hover::before {
+  background-color: #beef33;
+}
+
+.interviews__item h2 {
+  position: absolute;
+  top: 1.2rem;
+  left: 2rem;
+  margin: 0;
+  font-size: 5rem;
+}
+
+.interviews__item img {
+  max-height: 560px;
+}
+</style>

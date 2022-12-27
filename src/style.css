@@ -36,11 +36,15 @@ a:focus-visible {
   text-decoration: underline;
 }
 
+img {
+  width: 100%;
+}
+
 .main {
   position: absolute;
   top: 0;
-  left: 35%;
-  width: 65%;
+  left: 33%;
+  width: 67%;
 }
 
 .logo {
@@ -51,5 +55,5 @@ a:focus-visible {
 }
 
 .logo img {
-  width: 22rem;
+  width: 21rem;
 }
