@@ -1,13 +1,13 @@
 <template>
   <section class="interview">
     <h1>{{ interview.name }}</h1>
-    <h2>{{ interview.location }}</h2>
+    <h5 class="interview__location">{{ interview.location }}</h5>
     <img
       :src="`../src/assets/images/${interview.portrait}`"
       :alt="`interview with ${interview.name}`"
     />
-    <h3>{{ interview.intro }}</h3>
-    <ul>
+    <h3 class="interview__intro">{{ interview.intro }}</h3>
+    <ul class="interview__text">
       <li v-for="(question, index) in interview.questions" :key="index">
         <h4>{{ question.title }}</h4>
         <p>{{ question.answer }}</p>
@@ -22,7 +22,7 @@
       </li>
     </ul>
     <p>{{ interview.thanks }}</p>
-    <p>{{ interview.imprint }}</p>
+    <h6>{{ interview.imprint }}</h6>
   </section>
 </template>
 
@@ -44,3 +44,31 @@ export default {
   },
 };
 </script>
+
+<style>
+.interview {
+  margin: 2rem 0 4rem;
+}
+
+.interview__location {
+  text-indent: 2px;
+  margin-bottom: 0.2rem;
+}
+
+.interview__intro {
+  margin: 1.7rem 0 2.1rem;
+}
+
+.interview__images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.interview__images img {
+  width: auto;
+  max-height: 567px;
+  margin-top: 0.8rem;
+}
+</style>

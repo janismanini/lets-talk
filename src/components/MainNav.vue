@@ -50,7 +50,8 @@ export default {
   padding: 0 5px;
 }
 
-.nav a:hover {
+.nav a:hover,
+.router-link-active:not(.logo__link) {
   background-color: #beef33;
 }
 

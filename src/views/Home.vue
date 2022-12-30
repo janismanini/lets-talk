@@ -35,9 +35,6 @@ export default {
 </script>
 
 <style>
-.interviews {
-  width: 75%;
-}
 .interviews__item {
   position: relative;
   max-height: 560px;
@@ -45,6 +42,7 @@ export default {
 
 .interviews__item a {
   display: block;
+  max-height: 560px;
 }
 
 .interviews__item a::before {
@@ -63,10 +61,8 @@ export default {
 
 .interviews__item h2 {
   position: absolute;
-  top: 1.2rem;
+  top: 1.3rem;
   left: 2rem;
-  margin: 0;
-  font-size: 5rem;
 }
 
 .interviews__item img {
