@@ -37,12 +37,11 @@ export default {
 <style>
 .interviews__item {
   position: relative;
-  max-height: 560px;
 }
 
 .interviews__item a {
   display: block;
-  max-height: 560px;
+  height: 560px;
 }
 
 .interviews__item a::before {
@@ -62,10 +61,12 @@ export default {
 .interviews__item h2 {
   position: absolute;
   top: 1.3rem;
-  left: 2rem;
+  left: 1.5rem;
 }
 
 .interviews__item img {
   max-height: 560px;
+  width: auto;
+  max-width: 840px;
 }
 </style>

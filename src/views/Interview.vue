@@ -63,12 +63,13 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 2rem;
+  gap: 4.5rem;
+  margin: 2rem 0;
 }
 
 .interview__images img {
-  width: auto;
   max-height: 567px;
-  margin-top: 0.8rem;
+  width: auto;
+  max-width: 840px;
 }
 </style>

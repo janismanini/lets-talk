@@ -41,3 +41,9 @@
     </p>
   </section>
 </template>
+
+<style>
+.about {
+  margin: 2rem 0 4rem;
+}
+</style>
