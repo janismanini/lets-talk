@@ -9,7 +9,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-body, h1, h2, h3, h4, h5, h6, p, ul {
+body, h1, h2, h3, h4, h5, p, ul {
   margin: 0;
 }
 
@@ -33,7 +33,7 @@ a:focus-visible {
   text-decoration: underline;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
   font-weight: 800;
 }
 
@@ -52,10 +52,6 @@ h4, p {
 }
 
 h5 {
-  font-size: 1.2rem;
-}
-
-h6 {
   font-size: 1rem;
 }
 
@@ -80,11 +76,11 @@ img {
 
 .logo {
   position: fixed;
-  top: 7rem;
-  right: 3.5rem;
+  top: 3rem;
+  right: 1.6rem;
   z-index: 1;
 }
 
 .logo img {
-  width: 21rem;
+  width: 16rem;
 }

@@ -1,10 +1,10 @@
 <template>
   <section class="interview">
     <h1>{{ interview.name }}</h1>
-    <h5 class="interview__location">{{ interview.location }}</h5>
+    <span class="interview__location">{{ interview.location }}</span>
     <img
       :src="`../src/assets/images/${interview.portrait}`"
-      :alt="`interview with ${interview.name}`"
+      :alt="`person behind ${interview.name} at work`"
     />
     <h3 class="interview__intro">{{ interview.intro }}</h3>
     <ul class="interview__text">
@@ -16,13 +16,13 @@
             v-for="(image, index) in question.images"
             :key="index"
             :src="`../src/assets/images/${image}`"
-            :alt="`interview with ${interview.name}`"
+            alt=""
           />
         </div>
       </li>
     </ul>
     <p>{{ interview.thanks }}</p>
-    <h6>{{ interview.imprint }}</h6>
+    <h5>{{ interview.imprint }}</h5>
   </section>
 </template>
 
@@ -51,6 +51,9 @@ export default {
 }
 
 .interview__location {
+  display: block;
+  font-weight: 800;
+  font-size: 1.2rem;
   text-indent: 2px;
   margin-bottom: 0.2rem;
 }

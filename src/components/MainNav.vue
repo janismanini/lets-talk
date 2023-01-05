@@ -52,7 +52,7 @@ export default {
 
 .nav a:hover,
 .router-link-active:not(.logo__link) {
-  background-color: #ffcd99;
+  background-color: #ffc78ce6;
 }
 
 .nav li {

@@ -10,7 +10,7 @@
           <h2>{{ interview.name }}</h2>
           <img
             :src="`../src/assets/images/${interview.portrait}`"
-            :alt="`interview with ${interview.name}`"
+            :alt="`interview with person behind ${interview.name}`"
           />
         </interview-link>
       </li>
@@ -51,12 +51,13 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: #ffcd99;
+  mix-blend-mode: luminosity;
 }
 
 .interviews__item a:hover::before {
-  background-color: #ffcd99;
-  mix-blend-mode: luminosity;
+  background-color: unset;
+  mix-blend-mode: unset;
 }
 
 .interviews__item h2 {
@@ -66,7 +67,7 @@ export default {
 }
 
 .interviews__item img {
-  max-height: 560px;
+  height: 560px;
   width: auto;
   max-width: 840px;
 }
