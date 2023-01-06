@@ -51,13 +51,11 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #ffcd99;
-  mix-blend-mode: luminosity;
 }
 
 .interviews__item a:hover::before {
-  background-color: unset;
-  mix-blend-mode: unset;
+  background-color: #ffcd99;
+  mix-blend-mode: luminosity;
 }
 
 .interviews__item h2 {

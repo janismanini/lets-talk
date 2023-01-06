@@ -47,7 +47,7 @@ export default {
 
 <style>
 .interview {
-  margin: 2rem 0 4rem;
+  margin: 1.4rem 0 4rem;
 }
 
 .interview__location {

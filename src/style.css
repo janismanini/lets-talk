@@ -9,6 +9,20 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+html {
+  height: -webkit-fill-available;
+}
+
+body {
+  height: 100%;
+}
+
+#app {
+  position: relative;
+  height: 100%;
+}
+
 body, h1, h2, h3, h4, h5, p, ul {
   margin: 0;
 }
@@ -61,26 +75,4 @@ p {
 
 img {
   width: 100%;
-}
-
-.main {
-  position: absolute;
-  top: 0;
-  left: 33%;
-  width: 67%;
-}
-
-.container {
-  max-width: 840px;
-}
-
-.logo {
-  position: fixed;
-  top: 3rem;
-  right: 1.6rem;
-  z-index: 1;
-}
-
-.logo img {
-  width: 16rem;
 }

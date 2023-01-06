@@ -1,10 +1,5 @@
 <template>
   <main-nav />
-  <aside class="logo">
-    <router-link to="/" class="logo__link">
-      <img src="../src/assets/lttgl_logo.png" alt="Lets Talk The Good Life" />
-    </router-link>
-  </aside>
   <main class="main">
     <div class="container">
       <router-view v-slot="{ Component }">
@@ -27,6 +22,17 @@ export default {
 </script>
 
 <style>
+.main {
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 65%;
+}
+
+.container {
+  max-width: 840px;
+}
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.1s ease-out;
