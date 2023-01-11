@@ -44,18 +44,8 @@ export default {
   height: 560px;
 }
 
-.interviews__item a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.interviews__item a:hover::before {
-  background-color: #ffcd99;
-  mix-blend-mode: luminosity;
+.interviews__item a:hover {
+  clip-path: polygon(86% 0, 100% 50%, 86% 100%, 0% 100%, 14% 50%, 0% 0%);
 }
 
 .interviews__item h2 {
