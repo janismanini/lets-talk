@@ -6,3 +6,9 @@
     </p>
   </section>
 </template>
+
+<style>
+.not-found {
+  margin: 1.6rem 0 2rem;
+}
+</style>

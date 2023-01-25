@@ -36,7 +36,7 @@ ul ul {
 }
 
 a {
-  color: #000;
+  color: #f97bda;
   text-decoration: none;
 }
 a:hover {
@@ -75,4 +75,30 @@ p {
 
 img {
   width: 100%;
+  display: block;
+}
+
+.is-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0,0,0,0);
+}
+
+@media only screen and (max-width: 545px) {
+  h1 {
+    line-height: 1;
+  }
+
+  h2, h3 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
 }

@@ -44,6 +44,12 @@
 
 <style>
 .about {
-  margin: 2rem 0 4rem;
+  margin: 1.6rem 0 4rem;
+}
+
+@media only screen and (max-width: 920px) {
+  .about {
+    margin: 1rem 0;
+  }
 }
 </style>

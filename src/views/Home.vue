@@ -34,29 +34,71 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .interviews__item {
   position: relative;
+
+  a {
+    display: block;
+    max-height: 560px;
+
+    &:hover h2 {
+      color: #f97bda;
+      transition: all 0.4s linear;
+    }
+  }
+
+  h2 {
+    position: absolute;
+    top: 1.4rem;
+    left: 0;
+    max-width: 100%;
+    padding: 0 1.5rem;
+    font-size: 9rem;
+    line-height: 0.9;
+    color: #fff;
+    word-break: break-word;
+    transition: all 0.4s ease-in;
+  }
+
+  img {
+    max-height: 560px;
+    width: auto;
+    max-width: 840px;
+  }
 }
 
-.interviews__item a {
-  display: block;
-  height: 560px;
+@media only screen and (max-width: 1454px) {
+  .interviews__item {
+    h2 {
+      color: #f97bda;
+    }
+    a:hover h2 {
+      color: #fff;
+    }
+  }
 }
 
-.interviews__item a:hover {
-  clip-path: polygon(86% 0, 100% 50%, 86% 100%, 0% 100%, 14% 50%, 0% 0%);
+@media only screen and (max-width: 1085px) {
+  .interviews__item {
+    img {
+      max-width: 100%;
+    }
+  }
 }
 
-.interviews__item h2 {
-  position: absolute;
-  top: 1.3rem;
-  left: 1.5rem;
+@media only screen and (max-width: 920px) {
+  .interviews__item h2 {
+    top: 1.2rem;
+    font-size: 4.8rem;
+  }
 }
 
-.interviews__item img {
-  height: 560px;
-  width: auto;
-  max-width: 840px;
+@media only screen and (max-width: 545px) {
+  .interviews__item h2 {
+    top: 1rem;
+    font-size: 2.6rem;
+    padding: 0 1rem;
+  }
 }
 </style>

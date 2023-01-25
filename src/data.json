@@ -2,7 +2,7 @@
   "interviews": [
     {
       "id": 1,
-      "name": "MA",
+      "name": "Marina Bautier",
       "date": "2014.04.28.",
       "location": "Brussels",
       "slug": "ma",
@@ -118,7 +118,7 @@
     },
     {
       "id": 2,
-      "name": "WOOTTEN",
+      "name": "Jess Cameron-Wootten",
       "date": "2015.09.04.",
       "location": "Melbourne",
       "slug": "wootten",
@@ -222,7 +222,7 @@
     },
     {
       "id": 3,
-      "name": "HANSEN & LYDERSEN",
+      "name": "Ole Hansen",
       "date": "2014.10.06.",
       "location": "London",
       "slug": "hansen-lydersen",
@@ -326,13 +326,13 @@
     },
     {
       "id": 4,
-      "name": "POMP AND SPLENDOUR",
+      "name": "Petra Cremming",
       "date": "2015.07.24.",
       "location": "Melbourne",
       "slug": "pomp-and-splendour",
       "portrait": "pompandsplendour_JanisKanga_00.jpg",
       "intro":
-        "Petra designs and arranges flower-displays, using mostly seasonal flowers. With her business Pomp and Splendour she supplies weddings, events and restaurants. Having decided against a shop, the florist instead works from her home in tranquil East Brunswick.",
+        "Petra designs and arranges flower-displays, using mostly seasonal flowers. With her business POMP AND SPLENDOUR she supplies weddings, events and restaurants. Having decided against a shop, the florist instead works from her home in tranquil East Brunswick.",
       "thanks": "Thank you Petra Cremming for the interview!",
       "imprint": "photography, interview & text: Janis Manini Claudia Kanga, July 2015",
       "questions": [
@@ -436,7 +436,7 @@
     },
     {
       "id": 5,
-      "name": "OUR/BERLIN",
+      "name": "Pauline Hoch",
       "date": "2014.09.11.",
       "location": "Berlin",
       "slug": "our-berlin",
@@ -570,7 +570,7 @@
     },
     {
       "id": 6,
-      "name": "FREUNDSAFT",
+      "name": "Marcus Moe & Leron Katsir",
       "date": "2014.04.04.",
       "location": "Freiburg",
       "slug": "freundsaft",
@@ -668,7 +668,7 @@
     },
     {
       "id": 7,
-      "name": "JOHANNA VAN DAALEN",
+      "name": "Johanna van Daalen",
       "date": "2014.04.18.",
       "location": "Brussels",
       "slug": "johanna-van-daalen",
