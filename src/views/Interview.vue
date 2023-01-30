@@ -47,6 +47,7 @@ export default {
 
 <style lang="scss">
 .interview {
+  white-space: pre-line;
   margin: 1.4rem 0 4rem;
 
   &__location {
