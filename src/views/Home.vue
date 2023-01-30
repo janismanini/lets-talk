@@ -1,5 +1,6 @@
 <template>
   <section class="interviews">
+    <h1 class="sr-only">List of interviews</h1>
     <ul class="interviews__list">
       <li
         v-for="interview in interviews"

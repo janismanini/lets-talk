@@ -16,7 +16,7 @@
             }
           "
         >
-          <span class="is-hidden">open and close navigation</span>
+          <span class="sr-only">open and close navigation</span>
           <span class="nav__toggle-line nav__toggle-line--1"></span>
           <span class="nav__toggle-line nav__toggle-line--2"></span>
           <span class="nav__toggle-line nav__toggle-line--3"></span>
@@ -210,7 +210,7 @@ export default {
 
 @media only screen and (max-width: 920px) {
   .nav .logo img {
-    width: 12rem;
+    width: 11rem;
   }
 }
 
@@ -221,7 +221,7 @@ export default {
     }
 
     & .logo img {
-      width: 9rem;
+      width: 8rem;
     }
 
     &.is-open .nav__list {

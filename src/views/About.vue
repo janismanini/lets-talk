@@ -1,6 +1,6 @@
 <template>
   <section class="about">
-    <h2>About this website</h2>
+    <h1>About this website</h1>
     <p>
       To practice my Vue.JS skills, I dug out this former project of mine and
       selected my favorite interviews. Enjoy :)
@@ -36,15 +36,18 @@
       to me<br /><br />No parts of this website may be reproduced without Janis
       Kanga's express consent, backlinks are allowed. Opinions expressed are not
       necessarily those of Janis Kanga. It is not authorised to modify or alter
-      the pictures in any way. Please always credit Janis Manini Claudia Kanga
-      as the photographer.
+      the pictures in any way. Please always credit Janis Kanga as the
+      photographer.
     </p>
   </section>
 </template>
 
 <style>
 .about {
-  margin: 1.6rem 0 4rem;
+  margin: 1.4rem 0 4rem;
+}
+.about h1 {
+  font-size: 1.8rem;
 }
 
 @media only screen and (max-width: 920px) {
