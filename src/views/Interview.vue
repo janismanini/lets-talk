@@ -3,7 +3,7 @@
     <h1>{{ interview.name }}</h1>
     <span class="interview__location">{{ interview.location }}</span>
     <img
-      :src="`../src/assets/images/${interview.portrait}`"
+      :src="`/images/${interview.portrait}`"
       :alt="`person behind ${interview.name} at work`"
     />
     <p class="interview__intro">{{ interview.intro }}</p>
@@ -15,7 +15,7 @@
           <img
             v-for="(image, index) in question.images"
             :key="index"
-            :src="`../src/assets/images/${image}`"
+            :src="`/images/${image}`"
             alt=""
           />
         </div>

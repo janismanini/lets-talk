@@ -10,7 +10,7 @@
         <interview-link :interview="interview">
           <h2>{{ interview.name }}</h2>
           <img
-            :src="`../src/assets/images/${interview.portrait}`"
+            :src="`/images/${interview.portrait}`"
             :alt="`interview with person behind ${interview.name}`"
           />
         </interview-link>
